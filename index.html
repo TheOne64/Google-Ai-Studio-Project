@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syllabus Planner & Work Scheduler</title>
+    <meta name="description" content="Upload a picture of your class syllabus to automatically extract deadlines, break them down into scheduled work milestones, and track your study plan." />
+    <meta property="og:title" content="Syllabus Planner & Work Scheduler" />
+    <meta property="og:description" content="Upload a picture of your class syllabus to automatically extract deadlines, break them down into scheduled work milestones, and track your study plan." />
+    <style>
+      vite-error-overlay {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      // Gracefully handle preview sandbox WebSocket reconnection noise
+      const origWarn = console.warn;
+      console.warn = function(...args) {
+        if (args.some(a => typeof a === 'string' && (a.toLowerCase().includes('websocket') || a.includes('[vite]')))) {
+          return;
+        }
+        origWarn.apply(console, args);
+      };
+      const origError = console.error;
+      console.error = function(...args) {
+        if (args.some(a => typeof a === 'string' && (a.toLowerCase().includes('websocket') || a.includes('[vite]') || a.includes('ModuleRunnerTransport')))) {
+          return;
+        }
+        origError.apply(console, args);
+      };
+
+      window.addEventListener('error', function(event) {
+        if (event && (
+          (event.message && (event.message.toLowerCase().includes('websocket') || event.message.includes('vite') || event.message.includes('ModuleRunnerTransport'))) ||
+          (event.filename && event.filename.includes('@vite/client'))
+        )) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          return false;
+        }
+      }, true);
+
+      window.addEventListener('unhandledrejection', function(event) {
+        if (event && event.reason && String(event.reason).toLowerCase().includes('websocket')) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      }, true);
+
+      try {
+        if (!sessionStorage.getItem('syllabus_active_session')) {
+          localStorage.removeItem('syllabus_auth_current_user');
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Syllabus Planner & Work Scheduler",
+  "description": "Upload a picture of your class syllabus to automatically extract deadlines, break them down into scheduled work milestones, and track your study plan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

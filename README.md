@@ -129,3 +129,7 @@ Most student planners require hours of manual date entry and treat deliverables 
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## Live Demo
+
+Here is the published AI website I created [SyllabusStudyRoad](https://syllabus-planner-work-scheduler.ai.studio/).

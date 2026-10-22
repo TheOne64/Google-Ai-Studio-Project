@@ -1,4 +1,4 @@
-# 🎓 SyllabusStudyRoad — Adaptive Academic Study Planner
+## SyllabusStudyRoad — Adaptive Academic Study Planner
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue.svg?logo=typescript)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19-61DAFB.svg?logo=react)](https://react.dev/)
@@ -10,7 +10,7 @@
 
 ---
 
-## 🌟 Why This Project Stands Out
+## Why This Project Stands Out
 
 Most student planners require hours of manual date entry and treat deliverables as single panic-inducing deadlines. **SyllabusStudyRoad** solves this through automated intelligence and cognitive pacing:
 
@@ -23,7 +23,7 @@ Most student planners require hours of manual date entry and treat deliverables 
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## Tech Stack & Architecture
 
 ### Frontend
 - **React 19 & TypeScript**: Declarative UI with strong type safety.
@@ -38,7 +38,7 @@ Most student planners require hours of manual date entry and treat deliverables 
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── .env.example              # Environment variables template
@@ -73,7 +73,7 @@ Most student planners require hours of manual date entry and treat deliverables 
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - **Node.js** (v18 or higher recommended)
@@ -117,7 +117,7 @@ Most student planners require hours of manual date entry and treat deliverables 
 
 ---
 
-## 🔒 Security & Privacy Highlights
+## Security & Privacy Highlights
 
 - **Identity Verification**: Passwords are authenticated before initiating the two-factor security checkpoint.
 - **Account Verification**: Sign-in requires an existing registered account with the specified provider (Google, Microsoft, Apple, or Email).
@@ -126,10 +126,6 @@ Most student planners require hours of manual date entry and treat deliverables 
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-## Live Demo
-
-Here is the published AI website I created [SyllabusStudyRoad](https://syllabus-planner-work-scheduler.ai.studio/).
